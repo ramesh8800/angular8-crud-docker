@@ -15,10 +15,10 @@ services:
     container_name: docker-nginx
     build: ./
     ports: 
-      - "80:80"
+        - "80:80"
     command: ["nginx", "-g", "daemon off;"]    
     links: 
-      - angular-service
+        - angular-service
 
 
 
